@@ -141,7 +141,7 @@ if __name__ == "__main__":
         "--repo_id",
         type=str,
         required=True,
-        help="Repository ID to download from (e.g., 'meta-llama/Llama-3.1-8B', 'deepseek-ai/DeepSeek-V3')",
+        help="Repository ID to download from (e.g., 'meta-llama/Llama-3.1-8B')",
     )
     parser.add_argument(
         "--hf_token",

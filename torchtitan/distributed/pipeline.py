@@ -344,10 +344,6 @@ def pipeline_module_split(
             module_names,
             num_stages,
         )
-        # logger.info(
-        #     f"PP rank {pp_rank} is building stage_idx {stage_idx} "
-        #     f"\nmodule names: {module_names}"
-        # )
         logger.info(
             f"ℹ️  [PP Rank {pp_rank} - Stage {stage_idx}] Number of modules: {len(module_names)}, Number of parameters: {sum([1 for _ in model_chunk.parameters()])}"
         )
